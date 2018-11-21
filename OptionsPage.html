@@ -67,6 +67,10 @@ body{
     top: 18px;
     z-index: -1;
 }
+.centered{
+    font-size: 200px;
+    margin: 7%;
+}
 </style>
 </head>
 
@@ -75,8 +79,12 @@ body{
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans|Poiret+One" rel="stylesheet">
 	<div class = "x"></div>
 	Welcome, would you like to score your own work, or some articles?
-	<a class = "left_button" href = "/ScoresPage.html">Scores</a>
-	<a class = "right_button" href = "/ScoreArticlesPage.html">Score Articles</a>
+	<a class = "left_button" href = "/ScoresPage.html">Calculate your scores
+	<div class= "centered"><i class="fa fa-calculator" aria-hidden="true"></i></div>
+	</a>
+	<a class = "right_button" href = "/ScoreArticlesPage.html">Score Articles
+	<div class= "centered"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
+	</a>
 	<a class = "restart" href= "/LoginPage.html"><i class="fa fa-reply" aria-hidden="true"></i></a>
 </body>
 </html>
