@@ -4,7 +4,7 @@
 <?php
 	$email = $_POST["email"];
 	$password = $_POST["password"];
-	$link = mysqli_connect("name", "username", "password","gsudbproject_fall2018") or die(mysql_error());
+	$link = mysqli_connect("samplecodb.cplqfb6rscf0.us-east-2.rds.amazonaws.com", "swizzywizzy", "Rootroot","gsudbproject_fall2018") or die(mysql_error());
 	$check = mysqli_query($link,"SELECT email,password FROM gsudbproject_fall2018.users WHERE email = '$email' AND password='$password'") or die(mysql_error());
 	
 	if ($check && mysqli_num_rows($check) > 0){
